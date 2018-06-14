@@ -1,7 +1,83 @@
+# -*- coding: utf-8 -*-
+
+from gyevha import *
+from datetime import datetime
+from time import sleep
+from bs4 import BeautifulSoup
+from humanfriendly import format_timespan, format_size, format_number, format_length
+import time, random, sys, json, codecs, threading, glob, re, string, os, requests, subprocess, six, ast, pytz, urllib, urllib.parse
+from gtts import gTTS
+from googletrans import Translator
+# Ini Untuk Login Via Lik Dan Via Emal
+#gye = LINE()
+#gye = LINE("Email","Password")
+#gye.log("Auth Token : " + str(gye.authToken))
+#channelToken = gye.getChannelResult()
+#gye.log("Channel Token : " + str(channelToken))
+
+# Silahkan Edit Sesukamu
+# Asalkan Rapih Dan Respon
+# jika ingin login Via qr Ganti Saja
+# Atau Login Via Emal
+# Mudeng Orang kalo Ra Mudeng
+# Sungguh Terlalu
+# Jangan Lupa Add Admin 
+# id Line ( aisyagye )
+#==============================================================================#
+botStart = time.time()
+#kalo mau login code qr disini pake
+#gye = LINE()
+#gye.log("Auth Token : " + str(gye.authToken))
+#channelToken = gye.getChannelResult()
+#gye.log("Channel Token : " + str(channelToken))
+
+#ais = LINE()
+#ais.log("Auth Token : " + str(ais.authToken))
+#channelToken = ais.getChannelResult()
+#ais.log("Channel Token : " + str(channelToken))
+
+#ki2 = LINE()
+#ki2.log("Auth Token : " + str(ki2.authToken))
+#channelToken = ki2.getChannelResult()
+#ki2.log("Channel Token : " + str(channelToken))
+
+#ki3 = LINE()
+#ki3.log("Auth Token : " + str(ki3.authToken))
+#channelToken = ki3.getChannelResult()
+#ki3.log("Channel Token : " + str(channelToken))
+
+#ki4 = LINE()
+#ki4.log("Auth Token : " + str(ki4.authToken))
+#channelToken = ki4.getChannelResult()
+#ki4.log("Channel Token : " + str(channelToken))
+
+#kalo mau login menggunakan token
+#gunakan disini hapus tanda pagarnya 
+#yg atas dinpagar atau bisa juga token di atas 
+#di dalam tanda LINE ("TOKEN MU ")
+
+gye = LINE("EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=")
+ki = LINE("EtQQZ5O8Q9ZNn47rzMCd.ZumT2/Y29n7tOJ4IwPo4tq.1TFAsQAvYzlyAp1XEM5RsdIZwZtoEnir3y6dea1fo1E=")
+ki2 = LINE("Et0Oj6SRTe8eGtw9jK3d.SPS+quoffhJbcv30K1vAdq.gD9LSFBUBorGs552hX0ltdIVxai6oaF/Ox4aGWcOFJA=")
+ki3 = LINE("EtuabQyPa4w1jYNY3sm0.ZaBHUQRqncLKKv+uKgw/qa.uBKyRSqmAN14wzFVY5K/nO+ja0fHE1IoLuFUqDALCsA=")
+ki4 = LINE("EtRhFIGABsjUHKYKVoqe.lVN3XpWByvHZ/lHSAQFaBG.Fo8l69iIhSLOiMhTWoKoj6JIgftT7HEjwC0RykLYwZc=")
+ki5 = LINE("Eti3jixZyomSekysnkab.KjDN9JBsWpSVnKHbTD0jYW.bDcL2DBnnsO3e/zhHO1kzyp3ghMmwx+R5iMRlbnqz6E=")
+
+#KAC = [gye,ais,ki2,ki3,ki4]
+#GUE = [ais,ki2,ki3,ki4]  #ini jangan luh hapus peak ini fungsi Ciak alias kick
+#maksudnya agar bot sb/induk gak ikutan nge kick Mudeng ora
+#gyeMID = gye.profile.mid
+#aisMID = ais.profile.mid
+#ki2MID = ki2.profile.mid
+#ki3MID = ki3.profile.mid
+#ki4MID = ki4.profile.mid
+#Bots = [gyeMID,aisMID,ki2MID,ki3MID,ki4MID]# ini jangan dinrubah Gunanya agar bot tidak saling kick
+#creator = ["ue32b11986d8e9e5cf70b642cf7ba88ff"]
+#Owner = ["ue32b11986d8e9e5cf70b642cf7ba88ff"]
+#admin = ["ue32b11986d8e9e5cf70b642cf7ba88ff"]
 
 
-
-
+#==============================================================================#
 
 helpMessage ="""=====ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ=====
 
@@ -65,8 +141,8 @@ Support By ~ ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ
 """
 helo=""
 
-KAC=[cl,ki,ki2,ki3,ki4,ki5]
-mid = cl.getProfile().mid
+KAC=[gye,ki,ki2,ki3,ki4,ki5]
+mid = gye.getProfile().mid
 kimid = ki.getProfile().mid
 ki2mid = ki2.getProfile().mid
 ki3mid = ki3.getProfile().mid
@@ -75,6 +151,34 @@ ki5mid = ki5.getProfile().mid
 Bots = [mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid]
 admsa = 'ue32b11986d8e9e5cf70b642cf7ba88ff'
 admin = 'ue32b11986d8e9e5cf70b642cf7ba88ff'
+
+gyeProfile = gye.getProfile()
+kiProfile = ki.getProfile()
+ki2Profile = ki2.getProfile()
+ki2Profile = ki3.getProfile()
+ki2Profile = ki4.getProfile()
+ki5Profile = ki5.getProfile()
+
+lineSettings = gye.getSettings()
+aisSettings = ais.getSettings()
+ki2Settings = ki2.getSettings()
+ki3Settings = ki3.getSettings()
+ki4Settings = ki4.getSettings()
+ki5Settings = ki5.getSettings()
+
+oepoll = OEPoll(gye)
+oepoll1 = OEPoll(ki)
+oepoll2 = OEPoll(ki2)
+oepoll3 = OEPoll(ki3)
+oepoll4 = OEPoll(ki4)
+oepoll5 = OEPoll(ki5)
+
+responsename = gye.getProfile().displayName
+responsename2 = ki.getProfile().displayName
+responsename3 = ki2.getProfile().displayName
+responsename2 = ki3.getProfile().displayName
+responsename3 = ki4.getProfile().displayName
+responsename4 = ki5.getProfile().displayName
 
 wait = {
     'contact':False,
@@ -112,8 +216,8 @@ wait2 = {
 setTime = {}
 setTime = wait2['setTime']
 
-contact = cl.getProfile()
-mybackup = cl.getProfile()
+contact = gye.getProfile()
+mybackup = gye.getProfile()
 mybackup.displayName = contact.displayName
 mybackup.statusMessage = contact.statusMessage
 mybackup.pictureStatus = contact.pictureStatus
