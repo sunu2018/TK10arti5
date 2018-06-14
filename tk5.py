@@ -6,27 +6,27 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob
 
 cl = CYBERTK.LINE()
-cl.login(token="EtT4s3iHtcuGpGRvBzQ4.W9aTfFZdynL2gJCmC/3b5a.PTpoGSBpCbAmDzmibiaRfJxKlCkfeVKSKRJYNi2HiUY=")
+cl.login(token="EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=")
 cl.loginResult()
 
 ki = CYBERTK.LINE()
-ki.login(token="EtujfBzuI1z0QBgva6td.KNXrj3qhlzimo8tPRlUNBq.Q6f+Da1H9Hgxn6i7k2YZvOZcriCF5UaKIvKzMB/1Zk4=")
+ki.login(token="EtQQZ5O8Q9ZNn47rzMCd.ZumT2/Y29n7tOJ4IwPo4tq.1TFAsQAvYzlyAp1XEM5RsdIZwZtoEnir3y6dea1fo1E=")
 ki.loginResult()
 
 ki2 = CYBERTK.LINE()
-ki2.login(token="Et5ej6YIPVVUny6eDSX0.wHJAjxxTcE6O4RUtl4DZGa.GS6RDvdDxoqV2SFlfsghStd3eZJmvQzfJrdZ0oCuUn0=")
+ki2.login(token="Et0Oj6SRTe8eGtw9jK3d.SPS+quoffhJbcv30K1vAdq.gD9LSFBUBorGs552hX0ltdIVxai6oaF/Ox4aGWcOFJA=")
 ki2.loginResult()
 
 ki3 = CYBERTK.LINE()
-ki3.login(token="EtBOuCRLXu3t7ytSmvCd.bG63AvwrIJ+Q9p9JTapTlq.kqxpJRjtLYDdJXvHQyFre+q1G6JXbuEvfYDC6Owboas=")
+ki3.login(token="EtuabQyPa4w1jYNY3sm0.ZaBHUQRqncLKKv+uKgw/qa.uBKyRSqmAN14wzFVY5K/nO+ja0fHE1IoLuFUqDALCsA=")
 ki3.loginResult()
 
 ki4 = CYBERTK.LINE()
-ki4.login(token="EteCgYnzCxVeXit22C3f.zPQ0B6cK30kntFaMcACyhW.dyrFcbfN3Icafxgy7h5CF8LOkbJRVtZJyi6lfe9J5Ok=")
+ki4.login(token="EtRhFIGABsjUHKYKVoqe.lVN3XpWByvHZ/lHSAQFaBG.Fo8l69iIhSLOiMhTWoKoj6JIgftT7HEjwC0RykLYwZc=")
 ki4.loginResult()
 
 ki5 = CYBERTK.LINE()
-ki5.login(token="EtpS7lpatEVIJp8uVxh9.zkCWpd/Lmq1BRzHJToKosq.f84WskzJ1jSrb0fGGecR05wu5vqb72Nn8R/380lp3Vw=")
+ki5.login(token="Eti3jixZyomSekysnkab.KjDN9JBsWpSVnKHbTD0jYW.bDcL2DBnnsO3e/zhHO1kzyp3ghMmwx+R5iMRlbnqz6E=")
 ki5.loginResult()
 
 print u"Login Success CYBERTK"
@@ -103,8 +103,8 @@ ki3mid = ki3.getProfile().mid
 ki4mid = ki4.getProfile().mid
 ki5mid = ki5.getProfile().mid
 Bots = [mid,kimid,ki2mid,ki3mid,ki4mid,ki5mid]
-admsa = 'uc3d02d15fcc360d9761a370c73edc1e4'
-admin = 'uc3d02d15fcc360d9761a370c73edc1e4'
+admsa = 'ue32b11986d8e9e5cf70b642cf7ba88ff'
+admin = 'ue32b11986d8e9e5cf70b642cf7ba88ff'
 
 wait = {
     'contact':False,
