@@ -437,7 +437,7 @@ def bot(op):
                     group.name = msg.text.replace("Gn:","")
                     ki.updateGroup(group)
                 else:
-                    cl.sendText(msg.to,"Hal ini tidak dapat digunakan di luar kelompok👈")
+                    gye.sendText(msg.to,"Hal ini tidak dapat digunakan di luar kelompok👈")
             elif ("Gn " in msg.text):
                 if msg.toType == 2:
                     group = cl.getGroup(msg.to)
