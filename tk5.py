@@ -1,37 +1,7 @@
-# -*- coding: utf-8 -*-
 
-import CYBERTK
-from CYBERTK.lib.curve.ttypes import *
-from datetime import datetime
-import time,random,sys,json,codecs,threading,glob
 
-cl = CYBERTK.LINE()
-cl.login(token="EtHO8rZgTw1q6juRoVvf.4YSrMg2oNLZ3c2qS97Qi+W.k2TeLOz1HTtz2jJ+CuaaDHN+R9wcNMOY2hfRLRA6GvA=")
-cl.loginResult()
 
-ki = CYBERTK.LINE()
-ki.login(token="EtQQZ5O8Q9ZNn47rzMCd.ZumT2/Y29n7tOJ4IwPo4tq.1TFAsQAvYzlyAp1XEM5RsdIZwZtoEnir3y6dea1fo1E=")
-ki.loginResult()
 
-ki2 = CYBERTK.LINE()
-ki2.login(token="Et0Oj6SRTe8eGtw9jK3d.SPS+quoffhJbcv30K1vAdq.gD9LSFBUBorGs552hX0ltdIVxai6oaF/Ox4aGWcOFJA=")
-ki2.loginResult()
-
-ki3 = CYBERTK.LINE()
-ki3.login(token="EtuabQyPa4w1jYNY3sm0.ZaBHUQRqncLKKv+uKgw/qa.uBKyRSqmAN14wzFVY5K/nO+ja0fHE1IoLuFUqDALCsA=")
-ki3.loginResult()
-
-ki4 = CYBERTK.LINE()
-ki4.login(token="EtRhFIGABsjUHKYKVoqe.lVN3XpWByvHZ/lHSAQFaBG.Fo8l69iIhSLOiMhTWoKoj6JIgftT7HEjwC0RykLYwZc=")
-ki4.loginResult()
-
-ki5 = CYBERTK.LINE()
-ki5.login(token="Eti3jixZyomSekysnkab.KjDN9JBsWpSVnKHbTD0jYW.bDcL2DBnnsO3e/zhHO1kzyp3ghMmwx+R5iMRlbnqz6E=")
-ki5.loginResult()
-
-print u"Login Success CYBERTK"
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 helpMessage ="""=====ҳ̸Ҳ̸ҳ Сўв∝я тҝ ҳ̸Ҳ̸ҳ=====
 
